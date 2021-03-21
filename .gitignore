@@ -93,6 +93,7 @@ src/phpunit
 # Composer
 #-------------------------
 src/vendor/
+src/.env
 
 #-------------------------
 # IDE / Development Files

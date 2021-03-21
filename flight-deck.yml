@@ -16,14 +16,19 @@ mysql_max_allowed_packet: "64M"
 mysql_table_open_cache: "256"
 mysql_query_cache_size: "0"
 flightdeck_web:
+  database.default.hostname: db
+  database.default.database: backoffice
+  database.default.username: backoffice
+  database.default.password: backoffice
+  database.default.DBDriver: MySQLi
   vhosts:
     - name: "backoffice.test"
       aliases:
         - "docker.test"
       docroot: "/var/www/html/public"
       env:
-        - name: "T7_SITE_ENVIRONMENT"
-          value: "docker"
+        - name: "CI_ENVIRONMENT"
+          value: "development"
       extraLines:
         - |
             <IfModule mod_proxy.c>

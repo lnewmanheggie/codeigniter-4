@@ -6,6 +6,8 @@ namespace App\Controllers;
 
 use App\Models\NewsModel;
 use CodeIgniter\Controller;
+use Config\Services;
+use Config\View;
 
 class News extends Controller {
 
@@ -54,6 +56,9 @@ class News extends Controller {
       echo view('news/success');
     }
     else {
+      $view = \Config\Services::renderer();
+     echo  $view->setData(['title'=>'Create a news item'])
+        ->render('news/create');
       echo view('templates/header', ['title' => 'Create a news item']);
       echo view('news/create');
       echo view('templates/footer');

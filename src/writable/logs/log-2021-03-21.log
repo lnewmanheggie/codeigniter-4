@@ -1,0 +1,18 @@
+CRITICAL - 2021-03-21 10:06:21 --> syntax error, unexpected '}', expecting ';'
+#0 /var/www/html/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/var/www/html/v...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Controllers...')
+#2 [internal function]: spl_autoload_call('App\\Controllers...')
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(892): class_exists('\\App\\Controller...', true)
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(416): CodeIgniter\CodeIgniter->startController()
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-03-21 11:55:57 --> Invalid file: news/success.php
+#0 /var/www/html/vendor/codeigniter4/framework/system/View/View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('news/success.ph...')
+#1 /var/www/html/vendor/codeigniter4/framework/system/Common.php(1217): CodeIgniter\View\View->render('news/success', Array, true)
+#2 /var/www/html/app/Controllers/News.php(54): view('news/success')
+#3 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(935): App\Controllers\News->create()
+#4 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(431): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+#5 /var/www/html/vendor/codeigniter4/framework/system/CodeIgniter.php(332): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /var/www/html/public/index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

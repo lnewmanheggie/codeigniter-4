@@ -2,10 +2,14 @@
 
 namespace App\Controllers;
 
+use App\Entities\User;
+use App\Models\UserModel;
+
 class Home extends BaseController
 {
 	public function index()
 	{
+
 		return view('welcome_message');
 	}
 }

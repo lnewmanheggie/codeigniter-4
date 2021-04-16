@@ -22,7 +22,7 @@ flightdeck_web:
   database.default.password: backoffice
   database.default.DBDriver: MySQLi
   vhosts:
-    - name: "backoffice.test"
+    - name: "new-backoffice.test"
       aliases:
         - "docker.test"
       docroot: "/var/www/html/public"

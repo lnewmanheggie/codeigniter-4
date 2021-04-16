@@ -14,11 +14,6 @@ use CodeIgniter\I18n\Time;
  */
 class User extends Entity {
 
-  /**
-   * @var string
-   */
-  protected $table = 'users';
-
   protected $attributes = [
     'id' => NULL,
     'name' => NULL,        // Represents a username
@@ -31,19 +26,6 @@ class User extends Entity {
   protected $dates = ['created_at', 'updated_at', 'deleted_at'];
 
 
-
-
-  /**
-   * @var string
-   */
-  protected $returnType = 'App\Entities\User';
-
-  /**
-   * @var bool
-   */
-  protected $useTimestamps = TRUE;
-
-  protected $userModel = 'App\Model\UserModel';
 
   /**
    * @param string $pass
